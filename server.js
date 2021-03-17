@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const port = process.env.PORT || 5000
-const staticDir = path.resolve('./client/public/build') 
+const staticDir = path.resolve('./build') 
 
 //Set up Static File Server
 app.use(express.static(staticDir))
